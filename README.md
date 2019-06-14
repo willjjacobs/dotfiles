@@ -20,3 +20,9 @@ https://github.com/klaxalk/linux-setup
 https://github.com/farinspace/linux-setups
 
 https://github.com/gdbtek/linux-cookbooks
+
+https://github.com/alrra/dotfilesi
+
+https://github.com/jamiew/git-friendly
+
+https://github.com/mattbanks/dotfiles-syntax-highlighting-st2

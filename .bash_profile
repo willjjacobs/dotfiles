@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
-
-# for file in ~/.{path,bash_prompt,aliases,functions,extra}; do
-#   [ -r "$file" ] && [ -f "$file" ] && source "$file";
-# done;
-# unset file;
-source ~/.bash_prompt,aliases,functions;
+source ~/.bash_prompt;
+source ~/.aliases;
 
 # Environment Exports
 
@@ -13,7 +9,7 @@ source ~/.bash_prompt,aliases,functions;
 export PATH="$HOME/bin:$PATH";
 
 # Make sublime-text the default editor if available, otherwise vim.
-if dpkg -l sublime-text; then
+if dpkg -l sublime-text >/dev/null; then
   export EDITOR='sublime-text';
 else
   export EDITOR='vim';
