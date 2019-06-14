@@ -3,7 +3,16 @@ Dotfiles for my Bash shells
 
 Largely based on the work of [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles/)
 
+Installation:
+* Clone repo into any location (e.g. `~/Projects`)
+* Run `stow -v -t ~ [packages]` and fix any conflicts if arise
+* `stow -v-t ~ text_edit git bash`
+
+Misc package needs some cleanup first.
+
+
 TODO:
+Store .gitconfig.local better
 Cleanup functions and aliases to what I use + collapse into .bash_profile
 inputrc
 xinitrc
