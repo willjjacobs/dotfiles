@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #TODO: take arguments on which packages to apply
-cmd="stow -vt ${HOME} bash git"
+cmd="stow -vt ${HOME} bash git vim misc"
 output="$(${cmd} 2>&1)"
 # echo "${output}"
 if [ "$output" ]; then

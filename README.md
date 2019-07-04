@@ -18,6 +18,8 @@ inputrc
 xinitrc
 xbindkeysrc (https://www.circuidipity.com/xbindkeysrc/)
 .ssh/config
+https://github.com/sickill/stderred
+https://github.com/ralish/dotfiles/
 https://github.com/jonleopard/dotfiles
 https://github.com/donnemartin/dev-setup
 https://github.com/Netherdrake/Dotfiles
