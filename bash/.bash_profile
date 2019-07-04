@@ -8,9 +8,10 @@ source ~/.aliases;
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+#TODO: call vim if inside terminal
 # Make sublime-text the default editor if available, otherwise vim.
 if dpkg -l sublime-text >/dev/null; then
-  export EDITOR='sublime-text';
+  export EDITOR='subl';
 else
   export EDITOR='vim';
 fi;
@@ -23,6 +24,10 @@ export HISTSIZE='32768';
 export HISTFILESIZE="${HISTSIZE}";
 # Omit duplicates and commands that begin with a space from history.
 export HISTCONTROL='ignoreboth';
+# Save each command to the history before displaying the subsequent prompt
+export PROMPT_COMMAND="history -a"
+# Patterns matched against commands to be excluded from saving
+export HISTIGNORE="clear:exit:history"
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
@@ -40,8 +45,14 @@ shopt -s nocaseglob;
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
 
+# Try to autocorrect typos during directory completion
+shopt -s dirspell;
+
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
+
+# Try and save multi-line commands as a single entry
+shopt -s cmdhist;
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
