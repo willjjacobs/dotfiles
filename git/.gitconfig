@@ -205,4 +205,22 @@
     #     order to allow any of the above configs to be overwritten
     #     by the local ones
 
-path = ~/.gitconfig.local
+    path = ~/.gitconfig.local
+    # https://git-scm.com/docs/git-config
+    # Sample .gitconfig.local -- DO NOT CHECK INTO VCS
+	# [user]
+	# 	name =
+	# 	email =
+	# 	signingKey =
+
+	# [credential]
+	# 	# Set the cache to timeout after 1 hour (setting is in seconds)
+	# 	helper = cache --timeout=3600
+
+	# [commit]
+	# 	# https://help.github.com/articles/signing-commits-using-gpg/
+	# 	gpgSign = 
+
+	# [github]
+	#  	user = 
+	#  	token = 
